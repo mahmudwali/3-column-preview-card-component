@@ -1,0 +1,177 @@
+:root{
+    --fontBig: 'Big Shoulders Display', sans-serif;
+    --fontLexend: 'Lexend Deca', sans-serif;
+
+    
+/* ## Colors
+
+### Primary */
+
+--BrightOrange: hsl(31, 77%, 52%);
+--DarkCyan: hsl(184, 100%, 22%);
+--VeryDarkCyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--TransparentWhite : hsla(0, 0%, 100%, 0.75);
+--VeryLightGray : hsl(0, 0%, 95%);
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: var(--fontLexend);
+
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+.cardA{
+    background: var(--BrightOrange);
+    width: 100%;
+    padding: 25px;
+    height: 50vh;
+    border-radius: 10px 0px 0px 10px;
+        
+}
+
+.cardA img{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.cardA h2{
+    font-family: var(--fontBig);
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--VeryLightGray);
+    margin-bottom: 20px;
+}
+.cardA p{
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 32px;
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+    color: var(--TransparentWhite);
+}
+.cardA button{
+    padding: 10px 22px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+/* // */
+
+.cardB{
+    background: var(--DarkCyan);
+
+    width: 100%;
+    padding: 25px;
+    height: 50vh;
+        
+}
+
+.cardB img{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.cardB h2{
+    font-family: var(--fontBig);
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--VeryLightGray);
+    margin-bottom: 20px;
+}
+.cardB p{
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 32px;
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+    color: var(--TransparentWhite);
+}
+.cardB button{
+    padding: 10px 22px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+/* //  */
+
+.cardC{
+    background: var(--VeryDarkCyan);
+    width: 100%;
+    padding: 25px;
+    height: 50vh;
+    border-radius: 0px 10px 10px 0px;
+
+        
+}
+
+.cardC img{
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.cardC h2{
+    font-family: var(--fontBig);
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--VeryLightGray);
+    margin-bottom: 20px;
+}
+.cardC p{
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 32px;
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+    color: var(--TransparentWhite);
+}
+.cardC button{
+    padding: 10px 22px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+
+@media only screen and (max-width:768px){
+    .main{
+        flex-direction: column;
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    .cardA{
+        position: relative;
+
+    }
+    body{
+        display: flex;
+        width: 100%;
+        overflow: scroll;
+        flex-wrap: wrap;
+    }
+}
